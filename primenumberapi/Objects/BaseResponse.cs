@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace primenumberapi.Objects
+{
+    public abstract class BaseResponse
+        : IResponse
+    {
+
+        public bool IsSuccess { get; set; }
+        public string ErrorMessage { get; set; }
+
+        public BaseResponse()
+        {
+            IsSuccess = true;
+        }
+
+    }
+
+}
